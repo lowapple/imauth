@@ -466,9 +466,7 @@ services:
 
   server:
     container_name: services-imauth-server
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ${IMAUTH_IMAGE:-ghcr.io/soapbird/imauth:latest}
     environment:
       - IMAUTH_CDP_URLS=http://chrome-0:9223,http://chrome-1:9223,http://chrome-2:9223
       - IMAUTH_GRPC_ADDR=0.0.0.0:50051
