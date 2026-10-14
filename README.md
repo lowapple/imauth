@@ -118,23 +118,23 @@ When published, container images use the version from `VERSION` without a leadin
 
 | Image                       | Contents                               |
 | --------------------------- | -------------------------------------- |
-| `ghcr.io/soapbird/imauth`              | gRPC server + CLI (slim runtime)       |
-| `ghcr.io/soapbird/imauth-chrome`       | Chromium + Kasm browser viewer sidecar |
-| `ghcr.io/soapbird/imauth-chrome-proxy` | Authenticated browser viewer proxy     |
+| `ghcr.io/lowapple/imauth`              | gRPC server + CLI (slim runtime)       |
+| `ghcr.io/lowapple/imauth-chrome`       | Chromium + Kasm browser viewer sidecar |
+| `ghcr.io/lowapple/imauth-chrome-proxy` | Authenticated browser viewer proxy     |
 
 ```bash
 # Pull a specific release (or :latest)
-docker pull ghcr.io/soapbird/imauth:0.8.0
-docker pull ghcr.io/soapbird/imauth-chrome:0.8.0
-docker pull ghcr.io/soapbird/imauth-chrome-proxy:0.8.0
+docker pull ghcr.io/lowapple/imauth:0.8.0
+docker pull ghcr.io/lowapple/imauth-chrome:0.8.0
+docker pull ghcr.io/lowapple/imauth-chrome-proxy:0.8.0
 ```
 
 Local image builds use the Makefile:
 
 ```bash
-make docker              # build ghcr.io/soapbird/imauth
-make docker-chrome       # build ghcr.io/soapbird/imauth-chrome
-make docker-chrome-proxy # build ghcr.io/soapbird/imauth-chrome-proxy
+make docker              # build ghcr.io/lowapple/imauth
+make docker-chrome       # build ghcr.io/lowapple/imauth-chrome
+make docker-chrome-proxy # build ghcr.io/lowapple/imauth-chrome-proxy
 make deploy-all     # buildx multi-arch build + push all images
 ```
 
