@@ -1,5 +1,5 @@
 PROJECT   := imauth
-REGISTRY  ?= ghcr.io/soapbird
+REGISTRY  ?= ghcr.io/lowapple
 IMAGE     := $(REGISTRY)/$(PROJECT)
 CHROME_IMAGE ?= $(REGISTRY)/$(PROJECT)-chrome
 CHROME_PROXY_IMAGE ?= $(REGISTRY)/$(PROJECT)-chrome-proxy

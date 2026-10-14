@@ -1,5 +1,5 @@
 x-chrome: &chrome
-  image: ghcr.io/soapbird/imauth-chrome:latest
+  image: ghcr.io/lowapple/imauth-chrome:latest
   shm_size: "2gb"
   restart: unless-stopped
   environment:
@@ -15,7 +15,7 @@ x-chrome: &chrome
     retries: 10
 
 x-chrome-proxy: &chrome-proxy
-  image: ghcr.io/soapbird/imauth-chrome-proxy:latest
+  image: ghcr.io/lowapple/imauth-chrome-proxy:latest
   restart: unless-stopped
 
 name: service-imauth
@@ -43,7 +43,7 @@ services:
 
   server:
     container_name: imauth-server
-    image: ghcr.io/soapbird/imauth:latest
+    image: ghcr.io/lowapple/imauth:latest
     restart: unless-stopped
     environment:
       - IMAUTH_CDP_URLS=http://chrome-0:9223
