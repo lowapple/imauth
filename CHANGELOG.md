@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+- Container images now publish to `ghcr.io/lowapple` (replacing `docker.lowapple.io`). Update pull sources and image references accordingly.
+
+
 ## [0.8.1] - 2026-10-01
 
 ### Fixed
